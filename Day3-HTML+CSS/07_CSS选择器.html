@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /* 通过选择器可以定位页面上的标签 */
+      /* 爬虫通常可以利用css的选择器来定位页面上的内容，方便做数据提取 */
+
+      /* 我要给所有的div都变黑 */
+      /* 标签选择器，直接写出标签名字就行 */
+      div {
+        background-color: lightpink;
+      }
+      #div1{
+        color: #eeeeee;
+      }
+      /* 类选择器，.后面跟着类目 */
+      .div1{
+        border: 1px solid crimson;
+      }
+      .div2{
+        color: aquamarine;
+      }
+      /* 后代选择器，语法：
+         选择器1 选择器2......*/
+    </style>
+
+</head>
+<body>
+<!-- html标签的class属性可以有多个值，表示可以被多个类选中 -->
+  <div class="div1" id="div1">div1</div>
+  <div id="div2" class="div2">div2</div>
+  <span class="div1 div2">A</span>
+  <p class="div1">B</p>
+
+</body>
+</html>

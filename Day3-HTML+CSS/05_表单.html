@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <!-- 单子 -->
+  <!-- 用户注册 -->
+  <!-- method表示请求方式，对应的是http协议的数据传输方式
+       GET:参数被放在url中；Post:参数不在url中，单独提交
+       action是表单提交到什么url-->
+  <form action="" method="">
+    姓名：<input type="text" /> <br><!-- 文本框 -->
+    密码：<input type="password" /> <br><!-- 密码框 -->
+    性别：<input name="gander" value="man" type="radio" />男 <input name="gander" value="woman" type="radio" />女<br><!-- 单选按钮 -->
+    爱好：
+    <input type="checkbox" name="hobby" value="run" />跑步
+    <input type="checkbox" name="hobby" value="swim" />游泳
+    <input type="checkbox" name="hobby" value="chess" />下棋 <br><!-- 多选按钮 -->
+    <!-- 有些数据是不方便给用户看的，就会用到隐藏域
+         用户是看不到，但表单中是有的-->
+    隐藏域：<input type="hidden" value="优秀陈小卷" name="secret" /> <br>
+    所在城市：
+    <select name="city"><!-- 下拉列表 -->
+      <option value="beijing">北京</option>
+      <option value="shanghai">上海</option>
+      <option value="shenzhen">深圳</option>
+      <option value="guangzhou">广州</option>
+    </select>
+    <!-- 各种按钮 -->
+    <!-- 纯按钮，想要添加功能必须要用js脚本来配合 -->
+    <input type="button" value="提交" onclick="javascript:console.log(123)">
+    <!-- 提交按钮，提交表单给服务器
+         点击该按钮之后，会自动把表单中的所有内容，做一个整合
+         name属性的值:value属性的值-->
+    <input type="submit" value="提交">
+  </form>
+
+</body>
+</html>

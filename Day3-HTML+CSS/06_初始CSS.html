@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!-- css 层叠样式表
+       三种引入方式：
+       1.通过style标签引入css样式
+       2.通过style属性
+       3.通过link导入css文件
+
+       HTML：形成基本的页面结构
+       css:美化页面
+       js:让页面可以有更多交互，动态渲染一些资源-->
+  <style>
+    /* css的注释 */
+    /* id值表示在页面上找到对应id的元素，附上相关样式 */
+    #div1 {
+      font-size: 7cm;
+      color: lightpink;
+    }
+  </style>
+  <link href="div3.css" rel="stylesheet">
+</head>
+<body>
+<div id="div1">优秀陈小卷</div>
+<hr>
+<div id="div2" style="font-size: 5cm;color: deeppink">优秀陈小卷</div>
+<hr>
+<div id="div3" >优秀陈小卷</div>
+<hr>
+</body>
+</html>
